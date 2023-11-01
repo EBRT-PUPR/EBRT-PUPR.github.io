@@ -1,0 +1,432 @@
+/* Add your CSS styles here */
+body {
+  font-family: "Calibri", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: transparent;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Webpage pics/im1.jpg");
+  background-size: cover;
+}
+
+.landing-page {
+  background-color: transparent;
+  max-width: 960px;
+  margin-left: 50px;
+  text-align: left;
+  padding: 200px 0px 120px 20px;
+  color: white;
+}
+
+nav {
+  font-size: 19px;
+  font-weight: 30;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav li {
+  margin-right: 25px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: ease-in;
+  border-bottom: 2px solid transparent; /* Add an initially transparent underline */
+  padding-bottom: 3px; /* Adjust the padding as needed */
+}
+
+/* CSS for the hover effect */
+header nav ul li a:hover {
+  border-bottom: 1px solid white; /* Add an underline with the desired color */
+}
+
+.intro {
+  background-color: #333;
+  background-size: cover;
+  color: white;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #b4b4b4;
+  color: #fff;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 65px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #02173794;
+}
+
+.contact-button {
+  background-color: #b4b4b4;
+  color: #fff;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 18px;
+
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #02173794;
+}
+
+/* Style for the image container */
+.image-container {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  gap: 30px; /* Adjust the value to control the space between items */
+}
+
+/* Style for .vex-pic and .team-pic */
+.vex-pic,
+.team-pic {
+  border: none; /* Remove the default button border */
+  background: none; /* Remove the default button background */
+  padding-top: 5%;
+  padding-bottom: 2%;
+  overflow: hidden; /* Clip any overflowing content */
+  transition: transform 0.2s; /* Smooth transition for the hover effect */
+}
+
+/* Style the image inside .vex-pic and .team-pic */
+.vex-pic img,
+.team-pic img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Add a hover effect to scale the images on hover */
+.vex-pic:hover,
+.team-pic:hover {
+  transform: scale(1.03); /* Increase the size by 10% on hover */
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%; /* Adjust as needed for vertical positioning */
+  left: 50%; /* Adjust as needed for horizontal positioning */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+}
+
+/************** Footer Styles *****************************/
+footer {
+  background-color: white;
+  color: #333;
+  padding: 50px 60px 50px 30px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: underline;
+
+  font-size: 20px;
+}
+
+.footer-links a:hover {
+  color: #02173794; /* Change the color to blue on hover */
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-socials a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-socials a:hover {
+  color: #02173794; /* Change the color to blue on hover */
+}
+
+.footer-socials ul {
+  list-style: none;
+}
+
+/*****************************************************/
+
+.header-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Webpage pics/im18.jpg");
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  background-position: center center; /* Centra la imagen horizontal y verticalmente */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.about h1 {
+  font-size: 50px;
+  font-weight: 200;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin-left: 20px;
+  text-align: left;
+  padding: 100px 20px 30px 20px;
+}
+
+.part3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/Webpage pics/im3.jpg");
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  background-position: center center; /* Centra la imagen horizontal y verticalmente */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+  padding-top: 15%;
+  padding-bottom: 10%;
+  padding-left: 30%;
+  color: white;
+}
+
+.part1,
+.part2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.part1-img,
+.part2-img {
+  flex: 1;
+}
+
+.part1-text,
+.part2-text {
+  flex: 1;
+}
+
+.part1-img img,
+.part2-img img {
+  width: 600px; /* Set the desired width for the images */
+  height: 700px; /* Set the desired height for the images */
+  object-fit: cover; /* Maintain the aspect ratio and crop if necessary */
+}
+
+/*********************************************************/
+
+.header-team {
+  background-image: linear-gradient(
+      rgba(80, 80, 80, 0.6),
+      rgba(80, 80, 80, 0.6)
+    ),
+    url("/Webpage pics/im24.jpg");
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  background-position: center center; /* Centra la imagen horizontal y verticalmente */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.part1-team-img img {
+  width: 650px; /* Set the desired width for the images */
+  height: 550px; /* Set the desired height for the images */
+  object-fit: cover; /* Maintain the aspect ratio and crop if necessary */
+}
+
+.team_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.team_member_image img {
+  width: 330px; /* Set the desired width for the images */
+  height: 350px; /* Set the desired height for the images */
+  object-fit: cover; /* Maintain the aspect ratio and crop if necessary */
+  padding-top: 20px;
+}
+
+.team_member_info {
+  text-align: center;
+}
+
+.team_member_info p {
+  margin-top: -10px;
+  padding-bottom: 10px;
+  color: #333;
+}
+/*********************************************************/
+
+.game-landing h1 {
+  font-size: 70px;
+  font-weight: 200;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin-left: 20px;
+  text-align: left;
+  padding: 60px 20px 60px 20px;
+}
+
+.header-game {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://www.vexrobotics.com/media/wysiwyg/KSP20190430-18193546A_3.png);
+  background-size: cover;
+}
+
+.game-button {
+  display: inline-block;
+  background-color: #fffdfd;
+  color: #000000;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 45%;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.game-button:hover {
+  background-color: #02173794;
+}
+
+/*********************************************************/
+
+.header-community {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Webpage pics/im14.jpg");
+
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  background-position: 50%;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.community-landing h1 {
+  font-size: 50px;
+  font-weight: 200;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin-left: 20px;
+  text-align: left;
+  padding: 200px 20px 100px 20px;
+}
+
+.community_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.community_image img {
+  width: 100%; /* Set the desired width for the images */
+  height: 330px; /* Set the desired height for the images */
+  object-fit: cover; /* Maintain the aspect ratio and crop if necessary */
+  padding-top: 20px;
+}
+
+.community_info h4 {
+  font-size: 19px;
+  font-weight: 550;
+}
+
+/*********************************************************/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image {
+  overflow: hidden;
+  height: 300px;
+}
+
+.header-gallery header nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: ease-in;
+  border-bottom: 2px solid transparent; /* Add an initially transparent underline */
+}
+
+/* CSS for the hover effect */
+.header-gallery header nav ul li a:hover {
+  border-bottom: 1px solid black; /* Add an underline with the desired color */
+}
+
+/*********************************************************/
+
+.header-sponsorhip {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Webpage pics/im9.jpg");
+  background-size: cover;
+}
+
+.sponsorhips-landing h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-left: 20px;
+  text-align: left;
+  padding: 250px 20px 150px 20px;
+}
+
+.gallery-sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  padding-bottom: 70px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.image-sponsors img {
+  width: 100%;
+
+  height: 100%;
+}
+
+.image-sponsors {
+  overflow: hidden;
+  height: 300px;
+}
+
+.image-sponsors img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
